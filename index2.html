@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mi Página</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style id="dark-theme">
+    body.dark-theme {
+      background-color: #121212;
+      color: #ffffff;
+      transition: background-color 0.5s, color 0.5s;
+    }
+  
+    .navbar.dark-theme {
+      background-color: #333333;
+      color: #ffffff; /* Ajusta el color del texto según tus necesidades */
+      transition: background-color 0.5s, color 0.5s;
+    }
+    /* Agrega más estilos para el tema oscuro según tus necesidades */
+  </style>
+  
+  <style id="light-theme">
+    body.light-theme {
+      transition: background-color 0.5s, color 0.5s;
+      /* Estilos para el tema claro */
+    }
+  
+    .navbar.light-theme {
+      transition: background-color 0.5s, color 0.5s;
+      /* Estilos para el tema claro en la barra de navegación */
+    }
+    /* Puedes agregar más estilos para el tema claro según tus necesidades */
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Página</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Resumen de habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- Botón de cambio de tema -->
+        <button class="btn btn-outline-secondary" onclick="toggleTheme()">Cambiar Tema</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Acerca de mí -->
+  <section id="acerca" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Columna izquierda -->
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center h-100">
+            <div>
+              <h2>Jorge Adrian Montaño Torrico</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tristique odio. Proin at tellus
+                sagittis,
+                fringilla est eget, venenatis tortor. Vestibulum hendrerit non odio et malesuada. Integer gravida
+                vestibulum mi, in varius nulla fermentum in. Maecenas nec turpis et dolor ullamcorper vehicula.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Columna derecha -->
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center h-100 justify-content-center">
+            <img src="me.png" alt="Mi foto" class="img-fluid rounded-circle" style="max-width: 200px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="py-5">
+    <div class="container text-center">
+      <h2>Habilidades</h2>
+      <div class="row">
+        <!-- Primera fila -->
+        <div class="col-md-6">
+          <img src="habilidad1.png" alt="Habilidad 1" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tristique odio. Proin at tellus sagittis,
+              fringilla est eget, venenatis tortor. Vestibulum hendrerit non odio et malesuada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Segunda fila -->
+        <div class="col-md-6">
+          <img src="habilidad2.png" alt="Habilidad 2" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>HTML</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tristique odio. Proin at tellus sagittis,
+              fringilla est eget, venenatis tortor. Vestibulum hendrerit non odio et malesuada.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Tercera fila -->
+        <div class="col-md-6">
+          <img src="habilidad3.png" alt="Habilidad 3" class="img-fluid" style="max-width: 150px;">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <div>
+            <h3>JavaScript</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tristique odio. Proin at tellus sagittis,
+              fringilla est eget, venenatis tortor. Vestibulum hendrerit non odio et malesuada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Portafolio -->
+  <section id="portafolio" class="py-5">
+    <div class="container text-center">
+      <h2>Portafolio</h2>
+      <div class="row">
+        <!-- Elemento 1 -->
+        <div class="col-md-4">
+          <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Proyecto 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Ver</button>
+        </div>
+        <!-- Elemento 2 -->
+        <div class="col-md-4">
+          <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Proyecto 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto2">Ver</button>
+        </div>
+        <!-- Elemento 3 -->
+        <div class="col-md-4">
+          <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Proyecto 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto3">Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales para cada proyecto... -->
+  <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Contenido del modal para el Proyecto 1 -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Proyecto 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid mb-3" style="max-width: 100%;">
+          <p>Descripción detallada del Proyecto 1.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Contenido del modal para el Proyecto 2 -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Proyecto 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid mb-3" style="max-width: 100%;">
+          <p>Descripción detallada del Proyecto 2.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Contenido del modal para el Proyecto 3 -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Proyecto 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid mb-3" style="max-width: 100%;">
+          <p>Descripción detallada del Proyecto 3.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección Servicios -->
+  <section id="servicios" class="py-5">
+    <div class="container text-center">
+      <h2>Servicios</h2>
+      <div class="row">
+        <!-- Servicio 1 -->
+        <div class="col-md-4">
+          <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Servicio 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalServicio1">Ver</button>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="col-md-4">
+          <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Servicio 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalServicio2">Ver</button>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="col-md-4">
+          <img src="portafolio3.jpg" alt="Servicio 3" class="img-fluid mb-3" style="max-width: 100%;">
+          <h3>Servicio 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalServicio3">Ver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Modales para cada servicio -->
+    <div class="modal fade" id="modalServicio1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Contenido del modal para el Servicio 1 -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Servicio 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid mb-3" style="max-width: 100%;">
+            <p>Descripción detallada del Servicio 1.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="modalServicio2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Contenido del modal para el Servicio 2 -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Servicio 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid mb-3" style="max-width: 100%;">
+            <p>Descripción detallada del Servicio 2.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="modalServicio3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Contenido del modal para el Servicio 3 -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Servicio 3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="servicio3.jpg" alt="Servicio 3" class="img-fluid mb-3" style="max-width: 100%;">
+            <p>Descripción detallada del Servicio 3.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="py-5">
+    <div class="container text-center">
+      <h2>Contacto</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center bg-light">
+    <p>Derechos de autor © 2024 Jorge Adrian Montaño Torrico. Todos los derechos reservados.</p>
+  </footer>
+
+   <!-- Enlaces a los scripts de Bootstrap (jQuery y Popper.js son necesarios) -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Script para cambiar el tema -->
+   <script>
+    function toggleTheme() {
+      const body = document.body;
+      const navbar = document.querySelector('.navbar');
+  
+      if (body.classList.contains('dark-theme')) {
+        body.classList.remove('dark-theme');
+        navbar.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+        navbar.classList.add('light-theme');
+      } else {
+        body.classList.remove('light-theme');
+        navbar.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+        navbar.classList.add('dark-theme');
+      }
+    }
+  </script>
+  
+ 
+ </body>
+ 
+ </html>
